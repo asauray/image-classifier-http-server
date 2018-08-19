@@ -21,7 +21,7 @@ def predict(image):
     label = labels[0][0]
     return label
 
-img = load_img('mug.jpg', target_size=(224, 224))
+img = load_img('./resources/mug.jpg', target_size=(224, 224))
 predict(img)
 @app.route('/api/predict', methods=['POST'])
 def predict_route():
